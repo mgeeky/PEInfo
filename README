@@ -1,0 +1,10 @@
+This is another Portable Executable (PE) analysing stuff.
+It differs from another analysers just in way of displaying infos
+(in modal dialog box but just like a log format). 
+The unique difference of it is its ability to modify main headers like:
+IMAGE_DOS_HEADER, IMAGE_FILE_HEADER, IMAGE_OPTIONAL_HEADER32 . 
+Another ability is to show HEX dump of file, 
+calculate in-fly between RVA and RAW addresses, between HEX and DECIMAL base.
+
+Actually project developing is stopped because of another projects.
+Not worth testing - very buggy. Hope fix it later ;-)

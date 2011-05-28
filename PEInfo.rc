@@ -1,0 +1,180 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 526, 218, 313, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "PEInfo v0.6 (from MGeeky's bench)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Exit",IDOK,280,232,30,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_FILEPATH,2,2,290,13,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BUTTON1,294,2,16,13,BS_FLAT | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,2,18,308,195,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL | NOT WS_TABSTOP
+    CONTROL         "Keep on TOP",IDC_CHECK1,"Button",BS_AUTOCHECKBOX,2,234,59,9
+    PUSHBUTTON      "About...",IDC_BUTTON2,244,232,34,12,BS_FLAT | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,49,216,53,12,ES_CENTER | ES_UPPERCASE | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "10-16",IDC_BUTTON3,2,217,23,10,BS_FLAT | NOT WS_VISIBLE
+    PUSHBUTTON      "16-10",IDC_BUTTON4,25,217,23,10,BS_FLAT | NOT WS_VISIBLE
+    CONTROL         "Additional Functions",IDC_CHECK2,"Button",BS_AUTOCHECKBOX,117,234,78,9
+    PUSHBUTTON      "Edit Header",IDC_BUTTON5,224,217,43,9,BS_FLAT | NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "RVA2RAW",IDC_BUTTON6,103,217,40,9,BS_FLAT | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Save to file",IDC_BUTTON7,268,217,42,9,BS_FLAT | NOT WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "Certificate",IDC_BUTTON8,184,217,39,9,BS_FLAT | NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "Hex dump",IDC_BUTTON9,64,232,39,12,BS_FLAT | WS_DISABLED | NOT WS_TABSTOP
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 171, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PEInfo - Edit a PE Header value"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save changes to file",IDOK,25,169,82,10,BS_FLAT
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,114,165,50,14,BS_FLAT
+    COMBOBOX        IDC_VALUE,3,98,161,256,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select value",IDC_STATIC,3,89,70,8,WS_DISABLED
+    EDITTEXT        IDC_OLD_VALUE,3,128,70,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NEW_VALUE,85,128,79,13,ES_AUTOHSCROLL
+    LTEXT           "Current value:",IDC_STATIC,3,117,50,8,WS_DISABLED
+    LTEXT           "New value:",IDC_STATIC,87,118,50,8,WS_DISABLED
+    PUSHBUTTON      "Set",IDC_SET_VALUE,3,145,161,10,BS_FLAT
+    CTEXT           "Select a PE Header from first list, then select value that you want to edit, type new value and click set button.",IDC_STATIC,3,3,161,24,WS_DISABLED
+    CONTROL         "DOS Header",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,46,86,10
+    GROUPBOX        "Header",IDC_STATIC,4,35,102,48,WS_GROUP
+    CONTROL         "File Header",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,57,86,10
+    CONTROL         "Optional Header",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,69,86,10
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 366, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0xEE
+BEGIN
+    PUSHBUTTON      "OK",IDOK,311,169,50,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_OFFSET,2,170,57,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    DEFPUSHBUTTON   "GO",IDC_GO,60,169,16,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT1,2,3,359,164,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_EDIT2,160,169,53,12,ES_CENTER | ES_UPPERCASE | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "10-16",IDC_DECHEX,112,170,23,10,BS_FLAT | NOT WS_VISIBLE
+    PUSHBUTTON      "16-10",IDC_HEXDEC,136,170,23,10,BS_FLAT | NOT WS_VISIBLE
+    PUSHBUTTON      "RVA2RAW",IDC_RVA2RAW,214,170,40,9,BS_FLAT | NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 310
+        VERTGUIDE, 262
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 244
+        HORZGUIDE, 213
+        HORZGUIDE, 226
+        HORZGUIDE, 232
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 164
+        VERTGUIDE, 13
+        VERTGUIDE, 164
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 179
+        HORZGUIDE, 115
+        HORZGUIDE, 146
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 361
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 181
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
